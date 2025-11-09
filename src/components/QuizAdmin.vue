@@ -143,9 +143,11 @@ const deleteQuestion = (index: number) => {
 
 const moveQuestion = (fromIndex: number, toIndex: number) => {
   if (toIndex >= 0 && toIndex < questions.value.length) {
-    const question = questions.value.splice(fromIndex, 1)[0]
-    questions.value.splice(toIndex, 0, question)
-    saveQuestions()
+    const [question] = questions.value.splice(fromIndex, 1)
+    if (question) {
+      questions.value.splice(toIndex, 0, question)
+      saveQuestions()
+    }
   }
 }
 
