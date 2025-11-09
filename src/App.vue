@@ -1,32 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import QuizApp from './components/QuizApp.vue'
-import QuizAdmin from './components/QuizAdmin.vue'
 
-const currentView = ref<'quiz' | 'admin'>('quiz')
 </script>
 
 <template>
-<quiz-app></quiz-app>
-<!--  <div>-->
-<!--    <nav class="app-nav">-->
-<!--      <button-->
-<!--          @click="currentView = 'quiz'"-->
-<!--          :class="{ active: currentView === 'quiz' }"-->
-<!--      >-->
-<!--        🎮 Квиз-->
-<!--      </button>-->
-<!--      <button-->
-<!--          @click="currentView = 'admin'"-->
-<!--          :class="{ active: currentView === 'admin' }"-->
-<!--      >-->
-<!--        ⚙️ Админка-->
-<!--      </button>-->
-<!--    </nav>-->
-
-<!--    <QuizApp v-if="currentView === 'quiz'" />-->
-<!--    <QuizAdmin v-if="currentView === 'admin'" />-->
-<!--  </div>-->
+  <quiz-app />
 </template>
 
 <style>

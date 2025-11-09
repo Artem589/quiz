@@ -1,24 +1,6 @@
 <script setup lang="ts">
 import {ref, computed, onMounted, onUnmounted} from 'vue'
-
-
-interface Question {
-  id: number
-  image: string
-  description: string
-  answer: string
-  timeLimit: number
-}
-
-interface QuizState {
-  currentQuestion: number
-  score: number
-  userAnswer: string
-  isCorrect: boolean | null
-  timeLeft: number
-  timer: number | null
-  isFinished: boolean
-}
+import type {Question, QuizState} from '../types.ts'
 
 // // Вместо статического массива questions
 // const questions = ref<Question[]>([])
