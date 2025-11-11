@@ -151,6 +151,41 @@ const questions = ref<Question[]>([
     answer: '-1',
     timeLimit: 120
   },
+  {
+    id: 15,
+    image: '/assets/15.jpg',
+    description: '',
+    answer: '61',
+    timeLimit: 120
+  },
+  {
+    id: 16,
+    image: '/assets/16.jpg',
+    description: '',
+    answer: '98',
+    timeLimit: 120
+  },
+  {
+    id: 17,
+    image: '/assets/17.jpg',
+    description: '',
+    answer: '62',
+    timeLimit: 120
+  },
+  {
+    id: 18,
+    image: '/assets/18.jpg',
+    description: '',
+    answer: '77',
+    timeLimit: 120
+  },
+  {
+    id: 19,
+    image: '/assets/19.jpg',
+    description: '',
+    answer: '82',
+    timeLimit: 120
+  },
 ])
 
 // Состояние квиза
