@@ -57,63 +57,63 @@ const questions = ref<Question[]>([
     id: 1,
     image: '/assets/1.jpg',
     description: '',
-    answer: '98',
+    answer: '9',
     timeLimit: 120
   },
   {
     id: 2,
     image: '/assets/2.jpg',
     description: '',
-    answer: '24',
+    answer: '1',
     timeLimit: 120
   },
   {
     id: 3,
     image: '/assets/3.jpg',
     description: '',
-    answer: '174',
+    answer: '54',
     timeLimit: 120
   },
   {
     id: 4,
     image: '/assets/4.jpg',
     description: '',
-    answer: '9',
+    answer: '-1',
     timeLimit: 120
   },
   {
     id: 5,
     image: '/assets/5.jpg',
     description: '',
-    answer: '-6',
+    answer: '7',
     timeLimit: 120
   },
   {
     id: 6,
     image: '/assets/6.jpg',
     description: '',
-    answer: '-8',
+    answer: '7',
     timeLimit: 120
   },
   {
     id: 7,
     image: '/assets/7.jpg',
     description: '',
-    answer: '-4',
+    answer: '24',
     timeLimit: 120
   },
   {
     id: 8,
     image: '/assets/8.jpg',
     description: '',
-    answer: '4',
+    answer: '103',
     timeLimit: 120
   },
   {
     id: 9,
     image: '/assets/9.jpg',
     description: '',
-    answer: '36',
+    answer: '56',
     timeLimit: 120
   },
   {
@@ -127,7 +127,7 @@ const questions = ref<Question[]>([
     id: 11,
     image: '/assets/11.jpg',
     description: '',
-    answer: '-2',
+    answer: '2',
     timeLimit: 120
   },
   {
@@ -141,49 +141,133 @@ const questions = ref<Question[]>([
     id: 13,
     image: '/assets/13.jpg',
     description: '',
-    answer: '28',
+    answer: '-9',
     timeLimit: 120
   },
   {
     id: 14,
     image: '/assets/14.jpg',
     description: '',
-    answer: '-1',
+    answer: '32',
     timeLimit: 120
   },
   {
     id: 15,
     image: '/assets/15.jpg',
     description: '',
-    answer: '61',
+    answer: '34',
     timeLimit: 120
   },
   {
     id: 16,
     image: '/assets/16.jpg',
     description: '',
-    answer: '98',
+    answer: '2',
     timeLimit: 120
   },
   {
     id: 17,
     image: '/assets/17.jpg',
     description: '',
-    answer: '62',
+    answer: '2',
     timeLimit: 120
   },
   {
     id: 18,
     image: '/assets/18.jpg',
     description: '',
-    answer: '77',
+    answer: '1,4',
     timeLimit: 120
   },
   {
     id: 19,
     image: '/assets/19.jpg',
     description: '',
-    answer: '82',
+    answer: '5',
+    timeLimit: 120
+  },
+  {
+    id: 20,
+    image: '/assets/20.jpg',
+    description: '',
+    answer: '68',
+    timeLimit: 120
+  },
+  {
+    id: 22,
+    image: '/assets/22.jpg',
+    description: '',
+    answer: '-5',
+    timeLimit: 120
+  },
+  {
+    id: 23,
+    image: '/assets/23.jpg',
+    description: '',
+    answer: '55',
+    timeLimit: 120
+  },
+  {
+    id: 24,
+    image: '/assets/24.jpg',
+    description: '',
+    answer: '12',
+    timeLimit: 120
+  },
+  {
+    id: 25,
+    image: '/assets/25.jpg',
+    description: '',
+    answer: '90',
+    timeLimit: 120
+  },
+  {
+    id: 26,
+    image: '/assets/26.jpg',
+    description: '',
+    answer: '4',
+    timeLimit: 120
+  },
+  {
+    id: 27,
+    image: '/assets/27.jpg',
+    description: '',
+    answer: '25',
+    timeLimit: 120
+  },
+  {
+    id: 28,
+    image: '/assets/28.jpg',
+    description: '',
+    answer: '6',
+    timeLimit: 120
+  },
+  {
+    id: 29,
+    image: '/assets/29.jpg',
+    description: '',
+    answer: '12',
+    timeLimit: 120
+  },
+  {
+    id: 30,
+    image: '/assets/30.jpg',
+    description: '',
+    answer: '2',
+    timeLimit: 120
+  },
+  {
+    id: 31,
+    image: '/assets/31.jpg',
+    description: '',
+    answer: '16',
+    timeLimit: 120
+  },
+  {
+    id: 32,
+    image: '/assets/32.jpg',
+    description: '',
+    answer: '125',
     timeLimit: 120
   },
 ])
