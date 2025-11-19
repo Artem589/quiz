@@ -102,60 +102,60 @@ const questions = ref<Question[]>([
     answer: '11',
     timeLimit: 120
   },
-  {
-    id: 8,
-    image: '/assets/8.jpg',
-    description: '',
-    answer: '2',
-    timeLimit: 120
-  },
+  // {
+  //   id: 8,
+  //   image: '/assets/8.jpg',
+  //   description: '',
+  //   answer: '2',
+  //   timeLimit: 120
+  // },
   {
     id: 9,
     image: '/assets/9.jpg',
     description: '',
-    answer: '16',
+    answer: '2',
     timeLimit: 120
   },
   {
     id: 10,
     image: '/assets/10.jpg',
     description: '',
-    answer: '125',
+    answer: '16',
     timeLimit: 120
   },
   {
     id: 11,
     image: '/assets/11.jpg',
     description: '',
-    answer: '29',
+    answer: '125',
     timeLimit: 120
   },
   {
     id: 12,
     image: '/assets/12.png',
     description: '',
-    answer: '0,92',
+    answer: '29',
     timeLimit: 120
   },
   {
     id: 13,
     image: '/assets/13.png',
     description: '',
-    answer: '0,4',
+    answer: '0,92',
     timeLimit: 120
   },
   {
     id: 14,
     image: '/assets/14.jpg',
     description: '',
-    answer: '0,997',
+    answer: '0,4',
     timeLimit: 120
   },
   {
     id: 15,
     image: '/assets/15.png',
     description: '',
-    answer: '1',
+    answer: '0,997',
     timeLimit: 120
   },
   {
