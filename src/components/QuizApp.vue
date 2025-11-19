@@ -132,14 +132,14 @@ const questions = ref<Question[]>([
   },
   {
     id: 12,
-    image: '/assets/12.png',
+    image: '/assets/12.jpg',
     description: '',
     answer: '29',
     timeLimit: 120
   },
   {
     id: 13,
-    image: '/assets/13.png',
+    image: '/assets/13.jpg',
     description: '',
     answer: '0,92',
     timeLimit: 120
@@ -153,7 +153,7 @@ const questions = ref<Question[]>([
   },
   {
     id: 15,
-    image: '/assets/15.png',
+    image: '/assets/15.jpg',
     description: '',
     answer: '0,997',
     timeLimit: 120
