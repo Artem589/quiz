@@ -53,48 +53,48 @@ import type {Question, QuizState} from '../types.ts'
 // }
 
 const questions = ref<Question[]>([
-  {
-    id: 1,
-    image: '/assets/1.jpg',
-    description: '',
-    answer: '0,9',
-    timeLimit: 120
-  },
-  {
-    id: 2,
-    image: '/assets/2.jpg',
-    description: '',
-    answer: '-19',
-    timeLimit: 120
-  },
-  {
-    id: 3,
-    image: '/assets/3.jpg',
-    description: '',
-    answer: '12',
-    timeLimit: 120
-  },
-  {
-    id: 4,
-    image: '/assets/4.jpg',
-    description: '',
-    answer: '32',
-    timeLimit: 120
-  },
-  {
-    id: 5,
-    image: '/assets/5.jpg',
-    description: '',
-    answer: '8,32',
-    timeLimit: 120
-  },
-  {
-    id: 6,
-    image: '/assets/6.jpg',
-    description: '',
-    answer: '36',
-    timeLimit: 120
-  },
+  // {
+  //   id: 1,
+  //   image: '/assets/1.jpg',
+  //   description: '',
+  //   answer: '0,9',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 2,
+  //   image: '/assets/2.jpg',
+  //   description: '',
+  //   answer: '-19',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 3,
+  //   image: '/assets/3.jpg',
+  //   description: '',
+  //   answer: '12',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 4,
+  //   image: '/assets/4.jpg',
+  //   description: '',
+  //   answer: '32',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 5,
+  //   image: '/assets/5.jpg',
+  //   description: '',
+  //   answer: '8,32',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 6,
+  //   image: '/assets/6.jpg',
+  //   description: '',
+  //   answer: '36',
+  //   timeLimit: 120
+  // },
   {
     id: 7,
     image: '/assets/7.jpg',
@@ -158,62 +158,62 @@ const questions = ref<Question[]>([
     answer: '0,5',
     timeLimit: 120
   },
-  {
-    id: 16,
-    image: '/assets/16.jpg',
-    description: '',
-    answer: '-0,8',
-    timeLimit: 120
-  },
-  {
-    id: 17,
-    image: '/assets/17.jpg',
-    description: '',
-    answer: '-3,5',
-    timeLimit: 120
-  },
-  {
-    id: 18,
-    image: '/assets/18.jpg',
-    description: '',
-    answer: '2,5',
-    timeLimit: 120
-  },
-  {
-    id: 19,
-    image: '/assets/19.jpg',
-    description: '',
-    answer: '4,5',
-    timeLimit: 120
-  },
-  {
-    id: 20,
-    image: '/assets/20.jpg',
-    description: '',
-    answer: '25',
-    timeLimit: 120
-  },
-  {
-    id: 21,
-    image: '/assets/21.jpg',
-    description: '',
-    answer: '8',
-    timeLimit: 120
-  },
-  {
-    id: 22,
-    image: '/assets/22.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 23,
-    image: '/assets/23.jpg',
-    description: '',
-    answer: '-3',
-    timeLimit: 120
-  },
+  // {
+  //   id: 16,
+  //   image: '/assets/16.jpg',
+  //   description: '',
+  //   answer: '-0,8',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 17,
+  //   image: '/assets/17.jpg',
+  //   description: '',
+  //   answer: '-3,5',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 18,
+  //   image: '/assets/18.jpg',
+  //   description: '',
+  //   answer: '2,5',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 19,
+  //   image: '/assets/19.jpg',
+  //   description: '',
+  //   answer: '4,5',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 20,
+  //   image: '/assets/20.jpg',
+  //   description: '',
+  //   answer: '25',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 21,
+  //   image: '/assets/21.jpg',
+  //   description: '',
+  //   answer: '8',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 22,
+  //   image: '/assets/22.jpg',
+  //   description: '',
+  //   answer: '1',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 23,
+  //   image: '/assets/23.jpg',
+  //   description: '',
+  //   answer: '-3',
+  //   timeLimit: 120
+  // },
   {
     id: 24,
     image: '/assets/24.jpg',
@@ -249,13 +249,13 @@ const questions = ref<Question[]>([
     answer: '63',
     timeLimit: 120
   },
-  {
-    id: 29,
-    image: '/assets/29.jpg',
-    description: '',
-    answer: '29',
-    timeLimit: 120
-  },
+  // {
+  //   id: 29,
+  //   image: '/assets/29.jpg',
+  //   description: '',
+  //   answer: '29',
+  //   timeLimit: 120
+  // },
   {
     id: 30,
     image: '/assets/30.jpg',
@@ -312,69 +312,69 @@ const questions = ref<Question[]>([
     answer: '0,139',
     timeLimit: 120
   },
-  {
-    id: 38,
-    image: '/assets/38.jpg',
-    description: '',
-    answer: '-3',
-    timeLimit: 120
-  },
-  {
-    id: 39,
-    image: '/assets/39.jpg',
-    description: '',
-    answer: '-6',
-    timeLimit: 120
-  },
-  {
-    id: 40,
-    image: '/assets/40.jpg',
-    description: '',
-    answer: '3,8',
-    timeLimit: 120
-  },
-  {
-    id: 41,
-    image: '/assets/41.jpg',
-    description: '',
-    answer: '5,5',
-    timeLimit: 120
-  },
-  {
-    id: 42,
-    image: '/assets/42.jpg',
-    description: '',
-    answer: '84',
-    timeLimit: 120
-  },
-  {
-    id: 43,
-    image: '/assets/43.jpg',
-    description: '',
-    answer: '-8',
-    timeLimit: 120
-  },
-  {
-    id: 44,
-    image: '/assets/44.jpg',
-    description: '',
-    answer: '1,5',
-    timeLimit: 120
-  },
-  {
-    id: 45,
-    image: '/assets/45.jpg',
-    description: '',
-    answer: '0,25',
-    timeLimit: 120
-  },
-  {
-    id: 46,
-    image: '/assets/46.jpg',
-    description: '',
-    answer: '7',
-    timeLimit: 120
-  },
+  // {
+  //   id: 38,
+  //   image: '/assets/38.jpg',
+  //   description: '',
+  //   answer: '-3',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 39,
+  //   image: '/assets/39.jpg',
+  //   description: '',
+  //   answer: '-6',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 40,
+  //   image: '/assets/40.jpg',
+  //   description: '',
+  //   answer: '3,8',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 41,
+  //   image: '/assets/41.jpg',
+  //   description: '',
+  //   answer: '5,5',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 42,
+  //   image: '/assets/42.jpg',
+  //   description: '',
+  //   answer: '84',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 43,
+  //   image: '/assets/43.jpg',
+  //   description: '',
+  //   answer: '-8',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 44,
+  //   image: '/assets/44.jpg',
+  //   description: '',
+  //   answer: '1,5',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 45,
+  //   image: '/assets/45.jpg',
+  //   description: '',
+  //   answer: '0,25',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 46,
+  //   image: '/assets/46.jpg',
+  //   description: '',
+  //   answer: '7',
+  //   timeLimit: 120
+  // },
   {
     id: 47,
     image: '/assets/47.jpg',
