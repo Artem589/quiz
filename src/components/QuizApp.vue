@@ -95,20 +95,20 @@ const questions = ref<Question[]>([
   //   answer: '36',
   //   timeLimit: 120
   // },
-  {
-    id: 7,
-    image: '/assets/7.jpg',
-    description: '',
-    answer: '112',
-    timeLimit: 120
-  },
-  {
-    id: 8,
-    image: '/assets/8.jpg',
-    description: '',
-    answer: '25',
-    timeLimit: 120
-  },
+  // {
+  //   id: 7,
+  //   image: '/assets/7.jpg',
+  //   description: '',
+  //   answer: '112',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 8,
+  //   image: '/assets/8.jpg',
+  //   description: '',
+  //   answer: '25',
+  //   timeLimit: 120
+  // },
   {
     id: 9,
     image: '/assets/9.jpg',
@@ -165,13 +165,13 @@ const questions = ref<Question[]>([
   //   answer: '-0,8',
   //   timeLimit: 120
   // },
-  // {
-  //   id: 17,
-  //   image: '/assets/17.jpg',
-  //   description: '',
-  //   answer: '-3,5',
-  //   timeLimit: 120
-  // },
+  {
+    id: 17,
+    image: '/assets/17.jpg',
+    description: '',
+    answer: '-3,5',
+    timeLimit: 120
+  },
   // {
   //   id: 18,
   //   image: '/assets/18.jpg',
@@ -200,13 +200,13 @@ const questions = ref<Question[]>([
   //   answer: '8',
   //   timeLimit: 120
   // },
-  // {
-  //   id: 22,
-  //   image: '/assets/22.jpg',
-  //   description: '',
-  //   answer: '1',
-  //   timeLimit: 120
-  // },
+  {
+    id: 22,
+    image: '/assets/22.jpg',
+    description: '',
+    answer: '1',
+    timeLimit: 120
+  },
   // {
   //   id: 23,
   //   image: '/assets/23.jpg',
@@ -235,20 +235,20 @@ const questions = ref<Question[]>([
     answer: '17',
     timeLimit: 120
   },
-  {
-    id: 27,
-    image: '/assets/27.jpg',
-    description: '',
-    answer: '120',
-    timeLimit: 120
-  },
-  {
-    id: 28,
-    image: '/assets/28.jpg',
-    description: '',
-    answer: '63',
-    timeLimit: 120
-  },
+  // {
+  //   id: 27,
+  //   image: '/assets/27.jpg',
+  //   description: '',
+  //   answer: '120',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 28,
+  //   image: '/assets/28.jpg',
+  //   description: '',
+  //   answer: '63',
+  //   timeLimit: 120
+  // },
   // {
   //   id: 29,
   //   image: '/assets/29.jpg',
@@ -326,13 +326,13 @@ const questions = ref<Question[]>([
   //   answer: '-6',
   //   timeLimit: 120
   // },
-  // {
-  //   id: 40,
-  //   image: '/assets/40.jpg',
-  //   description: '',
-  //   answer: '3,8',
-  //   timeLimit: 120
-  // },
+  {
+    id: 40,
+    image: '/assets/40.jpg',
+    description: '',
+    answer: '3,8',
+    timeLimit: 120
+  },
   // {
   //   id: 41,
   //   image: '/assets/41.jpg',
@@ -340,13 +340,13 @@ const questions = ref<Question[]>([
   //   answer: '5,5',
   //   timeLimit: 120
   // },
-  // {
-  //   id: 42,
-  //   image: '/assets/42.jpg',
-  //   description: '',
-  //   answer: '84',
-  //   timeLimit: 120
-  // },
+  {
+    id: 42,
+    image: '/assets/42.jpg',
+    description: '',
+    answer: '84',
+    timeLimit: 120
+  },
   // {
   //   id: 43,
   //   image: '/assets/43.jpg',
@@ -361,13 +361,13 @@ const questions = ref<Question[]>([
   //   answer: '1,5',
   //   timeLimit: 120
   // },
-  // {
-  //   id: 45,
-  //   image: '/assets/45.jpg',
-  //   description: '',
-  //   answer: '0,25',
-  //   timeLimit: 120
-  // },
+  {
+    id: 45,
+    image: '/assets/45.jpg',
+    description: '',
+    answer: '0,25',
+    timeLimit: 120
+  },
   // {
   //   id: 46,
   //   image: '/assets/46.jpg',
@@ -382,13 +382,13 @@ const questions = ref<Question[]>([
     answer: '11',
     timeLimit: 120
   },
-  {
-    id: 48,
-    image: '/assets/48.jpg',
-    description: '',
-    answer: '11',
-    timeLimit: 120
-  },
+  // {
+  //   id: 48,
+  //   image: '/assets/48.jpg',
+  //   description: '',
+  //   answer: '11',
+  //   timeLimit: 120
+  // },
 
 
 ])
