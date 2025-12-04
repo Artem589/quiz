@@ -109,69 +109,69 @@ const questions = ref<Question[]>([
   //   answer: '25',
   //   timeLimit: 120
   // },
-  {
-    id: 9,
-    image: '/assets/9.jpg',
-    description: '',
-    answer: '0,7',
-    timeLimit: 120
-  },
-  {
-    id: 10,
-    image: '/assets/10.jpg',
-    description: '',
-    answer: '0,45',
-    timeLimit: 120
-  },
-  {
-    id: 11,
-    image: '/assets/11.jpg',
-    description: '',
-    answer: '0,8',
-    timeLimit: 120
-  },
-  {
-    id: 12,
-    image: '/assets/12.jpg',
-    description: '',
-    answer: '0,15',
-    timeLimit: 120
-  },
-  {
-    id: 13,
-    image: '/assets/13.jpg',
-    description: '',
-    answer: '0,2',
-    timeLimit: 120
-  },
-  {
-    id: 14,
-    image: '/assets/14.jpg',
-    description: '',
-    answer: '0,125',
-    timeLimit: 120
-  },
-  {
-    id: 15,
-    image: '/assets/15.jpg',
-    description: '',
-    answer: '0,5',
-    timeLimit: 120
-  },
   // {
-  //   id: 16,
-  //   image: '/assets/16.jpg',
+  //   id: 9,
+  //   image: '/assets/9.jpg',
   //   description: '',
-  //   answer: '-0,8',
+  //   answer: '0,7',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 10,
+  //   image: '/assets/10.jpg',
+  //   description: '',
+  //   answer: '0,45',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 11,
+  //   image: '/assets/11.jpg',
+  //   description: '',
+  //   answer: '0,8',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 12,
+  //   image: '/assets/12.jpg',
+  //   description: '',
+  //   answer: '0,15',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 13,
+  //   image: '/assets/13.jpg',
+  //   description: '',
+  //   answer: '0,2',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 14,
+  //   image: '/assets/14.jpg',
+  //   description: '',
+  //   answer: '0,125',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 15,
+  //   image: '/assets/15.jpg',
+  //   description: '',
+  //   answer: '0,5',
   //   timeLimit: 120
   // },
   {
-    id: 17,
-    image: '/assets/17.jpg',
+    id: 16,
+    image: '/assets/16.jpg',
     description: '',
-    answer: '-3,5',
+    answer: '-0,8',
     timeLimit: 120
   },
+  // {
+  //   id: 17,
+  //   image: '/assets/17.jpg',
+  //   description: '',
+  //   answer: '-3,5',
+  //   timeLimit: 120
+  // },
   // {
   //   id: 18,
   //   image: '/assets/18.jpg',
@@ -242,41 +242,41 @@ const questions = ref<Question[]>([
   //   answer: '120',
   //   timeLimit: 120
   // },
+  {
+    id: 28,
+    image: '/assets/28.jpg',
+    description: '',
+    answer: '63',
+    timeLimit: 120
+  },
+  {
+    id: 29,
+    image: '/assets/29.jpg',
+    description: '',
+    answer: '29',
+    timeLimit: 120
+  },
   // {
-  //   id: 28,
-  //   image: '/assets/28.jpg',
+  //   id: 30,
+  //   image: '/assets/30.jpg',
   //   description: '',
-  //   answer: '63',
+  //   answer: '0,4',
   //   timeLimit: 120
   // },
   // {
-  //   id: 29,
-  //   image: '/assets/29.jpg',
+  //   id: 31,
+  //   image: '/assets/31.jpg',
   //   description: '',
-  //   answer: '29',
+  //   answer: '0,35',
   //   timeLimit: 120
   // },
-  {
-    id: 30,
-    image: '/assets/30.jpg',
-    description: '',
-    answer: '0,4',
-    timeLimit: 120
-  },
-  {
-    id: 31,
-    image: '/assets/31.jpg',
-    description: '',
-    answer: '0,35',
-    timeLimit: 120
-  },
-  {
-    id: 32,
-    image: '/assets/32.jpg',
-    description: '',
-    answer: '0,35',
-    timeLimit: 120
-  },
+  // {
+  //   id: 32,
+  //   image: '/assets/32.jpg',
+  //   description: '',
+  //   answer: '0,35',
+  //   timeLimit: 120
+  // },
   {
     id: 33,
     image: '/assets/33.jpg',
@@ -312,13 +312,13 @@ const questions = ref<Question[]>([
     answer: '0,139',
     timeLimit: 120
   },
-  // {
-  //   id: 38,
-  //   image: '/assets/38.jpg',
-  //   description: '',
-  //   answer: '-3',
-  //   timeLimit: 120
-  // },
+  {
+    id: 38,
+    image: '/assets/38.jpg',
+    description: '',
+    answer: '-3',
+    timeLimit: 120
+  },
   // {
   //   id: 39,
   //   image: '/assets/39.jpg',
@@ -326,20 +326,20 @@ const questions = ref<Question[]>([
   //   answer: '-6',
   //   timeLimit: 120
   // },
-  {
-    id: 40,
-    image: '/assets/40.jpg',
-    description: '',
-    answer: '3,8',
-    timeLimit: 120
-  },
   // {
-  //   id: 41,
-  //   image: '/assets/41.jpg',
+  //   id: 40,
+  //   image: '/assets/40.jpg',
   //   description: '',
-  //   answer: '5,5',
+  //   answer: '3,8',
   //   timeLimit: 120
   // },
+  {
+    id: 41,
+    image: '/assets/41.jpg',
+    description: '',
+    answer: '5,5',
+    timeLimit: 120
+  },
   {
     id: 42,
     image: '/assets/42.jpg',
@@ -382,13 +382,13 @@ const questions = ref<Question[]>([
     answer: '11',
     timeLimit: 120
   },
-  // {
-  //   id: 48,
-  //   image: '/assets/48.jpg',
-  //   description: '',
-  //   answer: '11',
-  //   timeLimit: 120
-  // },
+  {
+    id: 48,
+    image: '/assets/48.jpg',
+    description: '',
+    answer: '11',
+    timeLimit: 120
+  },
 
 
 ])
