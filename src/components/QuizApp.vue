@@ -60,13 +60,13 @@ const questions = ref<Question[]>([
     answer: '73',
     timeLimit: 120
   },
-  {
-    id: 2,
-    image: '/assets/2.jpg',
-    description: '',
-    answer: '33',
-    timeLimit: 120
-  },
+  // {
+  //   id: 2,
+  //   image: '/assets/2.jpg',
+  //   description: '',
+  //   answer: '33',
+  //   timeLimit: 120
+  // },
   {
     id: 3,
     image: '/assets/3.jpg',
@@ -88,27 +88,27 @@ const questions = ref<Question[]>([
     answer: '138',
     timeLimit: 120
   },
-  {
-    id: 6,
-    image: '/assets/6.jpg',
-    description: '',
-    answer: '98',
-    timeLimit: 120
-  },
-  {
-    id: 7,
-    image: '/assets/7.jpg',
-    description: '',
-    answer: '82',
-    timeLimit: 120
-  },
-  {
-    id: 8,
-    image: '/assets/8.jpg',
-    description: '',
-    answer: '116',
-    timeLimit: 120
-  },
+  // {
+  //   id: 6,
+  //   image: '/assets/6.jpg',
+  //   description: '',
+  //   answer: '98',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 7,
+  //   image: '/assets/7.jpg',
+  //   description: '',
+  //   answer: '82',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 8,
+  //   image: '/assets/8.jpg',
+  //   description: '',
+  //   answer: '116',
+  //   timeLimit: 120
+  // },
   {
     id: 9,
     image: '/assets/9.jpg',
@@ -123,20 +123,20 @@ const questions = ref<Question[]>([
     answer: '7',
     timeLimit: 120
   },
-  {
-    id: 11,
-    image: '/assets/11.jpg',
-    description: '',
-    answer: '-6',
-    timeLimit: 120
-  },
-  {
-    id: 12,
-    image: '/assets/12.png',
-    description: '',
-    answer: '4',
-    timeLimit: 120
-  },
+  // {
+  //   id: 11,
+  //   image: '/assets/11.jpg',
+  //   description: '',
+  //   answer: '-6',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 12,
+  //   image: '/assets/12.png',
+  //   description: '',
+  //   answer: '4',
+  //   timeLimit: 120
+  // },
   {
     id: 13,
     image: '/assets/13.png',
@@ -144,20 +144,20 @@ const questions = ref<Question[]>([
     answer: '16',
     timeLimit: 120
   },
-  {
-    id: 14,
-    image: '/assets/14.jpg',
-    description: '',
-    answer: '28',
-    timeLimit: 120
-  },
-  {
-    id: 15,
-    image: '/assets/15.png',
-    description: '',
-    answer: '16',
-    timeLimit: 120
-  },
+  // {
+  //   id: 14,
+  //   image: '/assets/14.jpg',
+  //   description: '',
+  //   answer: '28',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 15,
+  //   image: '/assets/15.png',
+  //   description: '',
+  //   answer: '16',
+  //   timeLimit: 120
+  // },
   {
     id: 16,
     image: '/assets/16.jpg',
@@ -165,13 +165,13 @@ const questions = ref<Question[]>([
     answer: '81',
     timeLimit: 120
   },
-  {
-    id: 17,
-    image: '/assets/17.jpg',
-    description: '',
-    answer: '12',
-    timeLimit: 120
-  },
+  // {
+  //   id: 17,
+  //   image: '/assets/17.jpg',
+  //   description: '',
+  //   answer: '12',
+  //   timeLimit: 120
+  // },
   {
     id: 18,
     image: '/assets/18.jpg',
@@ -219,77 +219,77 @@ const questions = ref<Question[]>([
     image: '/assets/24.jpg',
     description: '',
     answer: '55',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 25,
     image: '/assets/25.jpg',
     description: '',
     answer: '18',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 26,
     image: '/assets/26.jpg',
     description: '',
     answer: '728',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 27,
     image: '/assets/27.jpg',
     description: '',
     answer: '1',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 28,
     image: '/assets/28.jpg',
     description: '',
     answer: '11',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 29,
     image: '/assets/29.jpg',
     description: '',
     answer: '22',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 30,
     image: '/assets/30.jpg',
     description: '',
     answer: '18',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 31,
     image: '/assets/31.png',
     description: '',
     answer: '18',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 32,
     image: '/assets/32.png',
     description: '',
     answer: '14',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 33,
     image: '/assets/33.jpg',
     description: '',
     answer: '8',
-    timeLimit: 480
+    timeLimit: 240
   },
   {
     id: 34,
     image: '/assets/34.png',
     description: '',
     answer: '56',
-    timeLimit: 480
+    timeLimit: 240
   },
   // {
   //   id: 35,
