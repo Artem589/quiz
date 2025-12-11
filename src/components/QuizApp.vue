@@ -53,13 +53,13 @@ import type {Question, QuizState} from '../types.ts'
 // }
 
 const questions = ref<Question[]>([
-  {
-    id: 1,
-    image: '/assets/1.jpg',
-    description: '',
-    answer: '73',
-    timeLimit: 120
-  },
+  // {
+  //   id: 1,
+  //   image: '/assets/1.jpg',
+  //   description: '',
+  //   answer: '73',
+  //   timeLimit: 120
+  // },
   // {
   //   id: 2,
   //   image: '/assets/2.jpg',
@@ -67,27 +67,27 @@ const questions = ref<Question[]>([
   //   answer: '33',
   //   timeLimit: 120
   // },
-  {
-    id: 3,
-    image: '/assets/3.jpg',
-    description: '',
-    answer: '34',
-    timeLimit: 120
-  },
-  {
-    id: 4,
-    image: '/assets/4.jpg',
-    description: '',
-    answer: '32',
-    timeLimit: 120
-  },
-  {
-    id: 5,
-    image: '/assets/5.jpg',
-    description: '',
-    answer: '138',
-    timeLimit: 120
-  },
+  // {
+  //   id: 3,
+  //   image: '/assets/3.jpg',
+  //   description: '',
+  //   answer: '34',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 4,
+  //   image: '/assets/4.jpg',
+  //   description: '',
+  //   answer: '32',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 5,
+  //   image: '/assets/5.jpg',
+  //   description: '',
+  //   answer: '138',
+  //   timeLimit: 120
+  // },
   // {
   //   id: 6,
   //   image: '/assets/6.jpg',
@@ -109,20 +109,20 @@ const questions = ref<Question[]>([
   //   answer: '116',
   //   timeLimit: 120
   // },
-  {
-    id: 9,
-    image: '/assets/9.jpg',
-    description: '',
-    answer: '33',
-    timeLimit: 120
-  },
-  {
-    id: 10,
-    image: '/assets/10.png',
-    description: '',
-    answer: '7',
-    timeLimit: 120
-  },
+  // {
+  //   id: 9,
+  //   image: '/assets/9.jpg',
+  //   description: '',
+  //   answer: '33',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 10,
+  //   image: '/assets/10.png',
+  //   description: '',
+  //   answer: '7',
+  //   timeLimit: 120
+  // },
   // {
   //   id: 11,
   //   image: '/assets/11.jpg',
@@ -137,13 +137,13 @@ const questions = ref<Question[]>([
   //   answer: '4',
   //   timeLimit: 120
   // },
-  {
-    id: 13,
-    image: '/assets/13.png',
-    description: '',
-    answer: '16',
-    timeLimit: 120
-  },
+  // {
+  //   id: 13,
+  //   image: '/assets/13.png',
+  //   description: '',
+  //   answer: '16',
+  //   timeLimit: 120
+  // },
   // {
   //   id: 14,
   //   image: '/assets/14.jpg',
@@ -158,27 +158,27 @@ const questions = ref<Question[]>([
   //   answer: '16',
   //   timeLimit: 120
   // },
-  {
-    id: 16,
-    image: '/assets/16.jpg',
-    description: '',
-    answer: '81',
-    timeLimit: 120
-  },
   // {
-  //   id: 17,
-  //   image: '/assets/17.jpg',
+  //   id: 16,
+  //   image: '/assets/16.jpg',
   //   description: '',
-  //   answer: '12',
+  //   answer: '81',
   //   timeLimit: 120
   // },
   {
-    id: 18,
-    image: '/assets/18.jpg',
+    id: 17,
+    image: '/assets/17.jpg',
     description: '',
-    answer: '6',
+    answer: '12',
     timeLimit: 120
   },
+  // {
+  //   id: 18,
+  //   image: '/assets/18.jpg',
+  //   description: '',
+  //   answer: '6',
+  //   timeLimit: 120
+  // },
   {
     id: 19,
     image: '/assets/19.png',
