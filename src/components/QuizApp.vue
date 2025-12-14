@@ -165,13 +165,13 @@ const questions = ref<Question[]>([
   //   answer: '81',
   //   timeLimit: 120
   // },
-  {
-    id: 17,
-    image: '/assets/17.jpg',
-    description: '',
-    answer: '12',
-    timeLimit: 120
-  },
+  // {
+  //   id: 17,
+  //   image: '/assets/17.jpg',
+  //   description: '',
+  //   answer: '12',
+  //   timeLimit: 120
+  // },
   // {
   //   id: 18,
   //   image: '/assets/18.jpg',
@@ -179,117 +179,117 @@ const questions = ref<Question[]>([
   //   answer: '6',
   //   timeLimit: 120
   // },
-  {
-    id: 19,
-    image: '/assets/19.png',
-    description: '',
-    answer: '12',
-    timeLimit: 120
-  },
-  {
-    id: 20,
-    image: '/assets/20.png',
-    description: '',
-    answer: '6',
-    timeLimit: 120
-  },
-  {
-    id: 21,
-    image: '/assets/21.jpg',
-    description: '',
-    answer: '2',
-    timeLimit: 120
-  },
-  {
-    id: 22,
-    image: '/assets/22.png',
-    description: '',
-    answer: '36',
-    timeLimit: 120
-  },
-  {
-    id: 23,
-    image: '/assets/23.png',
-    description: '',
-    answer: '2',
-    timeLimit: 120
-  },
-  {
-    id: 24,
-    image: '/assets/24.jpg',
-    description: '',
-    answer: '55',
-    timeLimit: 240
-  },
+  // {
+  //   id: 19,
+  //   image: '/assets/19.png',
+  //   description: '',
+  //   answer: '12',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 20,
+  //   image: '/assets/20.png',
+  //   description: '',
+  //   answer: '6',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 21,
+  //   image: '/assets/21.jpg',
+  //   description: '',
+  //   answer: '2',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 22,
+  //   image: '/assets/22.png',
+  //   description: '',
+  //   answer: '36',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 23,
+  //   image: '/assets/23.png',
+  //   description: '',
+  //   answer: '2',
+  //   timeLimit: 120
+  // },
+  // {
+  //   id: 24,
+  //   image: '/assets/24.jpg',
+  //   description: '',
+  //   answer: '55',
+  //   timeLimit: 240
+  // },
   {
     id: 25,
     image: '/assets/25.jpg',
     description: '',
     answer: '18',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 26,
     image: '/assets/26.jpg',
     description: '',
     answer: '728',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 27,
     image: '/assets/27.jpg',
     description: '',
     answer: '1',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 28,
     image: '/assets/28.jpg',
     description: '',
     answer: '11',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 29,
     image: '/assets/29.jpg',
     description: '',
     answer: '22',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 30,
     image: '/assets/30.jpg',
     description: '',
     answer: '18',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 31,
     image: '/assets/31.png',
     description: '',
     answer: '18',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 32,
     image: '/assets/32.png',
     description: '',
     answer: '14',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 33,
     image: '/assets/33.jpg',
     description: '',
     answer: '8',
-    timeLimit: 240
+    timeLimit: 480
   },
   {
     id: 34,
     image: '/assets/34.png',
     description: '',
     answer: '56',
-    timeLimit: 240
+    timeLimit: 480
   },
   // {
   //   id: 35,
