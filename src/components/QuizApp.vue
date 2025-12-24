@@ -242,27 +242,27 @@ const questions = ref<Question[]>([
   //   answer: '1',
   //   timeLimit: 600
   // },
-  {
-    id: 28,
-    image: '/assets/28.jpg',
-    description: '',
-    answer: '11',
-    timeLimit: 600
-  },
-  {
-    id: 29,
-    image: '/assets/29.jpg',
-    description: '',
-    answer: '22',
-    timeLimit: 600
-  },
-  {
-    id: 30,
-    image: '/assets/30.jpg',
-    description: '',
-    answer: '18',
-    timeLimit: 600
-  },
+  // {
+  //   id: 28,
+  //   image: '/assets/28.jpg',
+  //   description: '',
+  //   answer: '11',
+  //   timeLimit: 600
+  // },
+  // {
+  //   id: 29,
+  //   image: '/assets/29.jpg',
+  //   description: '',
+  //   answer: '22',
+  //   timeLimit: 600
+  // },
+  // {
+  //   id: 30,
+  //   image: '/assets/30.jpg',
+  //   description: '',
+  //   answer: '18',
+  //   timeLimit: 600
+  // },
   {
     id: 31,
     image: '/assets/31.png',
