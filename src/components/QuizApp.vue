@@ -263,20 +263,20 @@ const questions = ref<Question[]>([
   //   answer: '18',
   //   timeLimit: 600
   // },
-  {
-    id: 31,
-    image: '/assets/31.png',
-    description: '',
-    answer: '18',
-    timeLimit: 600
-  },
-  {
-    id: 32,
-    image: '/assets/32.png',
-    description: '',
-    answer: '14',
-    timeLimit: 600
-  },
+  // {
+  //   id: 31,
+  //   image: '/assets/31.png',
+  //   description: '',
+  //   answer: '18',
+  //   timeLimit: 600
+  // },
+  // {
+  //   id: 32,
+  //   image: '/assets/32.png',
+  //   description: '',
+  //   answer: '14',
+  //   timeLimit: 600
+  // },
   {
     id: 33,
     image: '/assets/33.jpg',
