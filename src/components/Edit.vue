@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {ref, computed, onMounted} from 'vue'
-import {useRouter} from 'vue-router'
 import type {Question} from '../types.ts'
 import {Icon} from '@iconify/vue'
 
@@ -336,10 +335,6 @@ const handleImageError = (question: Question | undefined) => {
   }
 }
 
-const clearImageUrl = (question: Question) => {
-  question.image = ''
-  delete imageErrors.value[question.id]
-}
 
 // Дополнительные функции
 const downloadAllImages = () => {

@@ -352,12 +352,12 @@ const saveQuestionsToStorage = () => {
 }
 
 // Кнопка перехода к редактору
-import { useRouter } from 'vue-router'
-const router = useRouter()
+// import { useRouter } from 'vue-router'
+// const router = useRouter()
 
-const goToEditor = () => {
-  router.push('/edit')
-}
+// const goToEditor = () => {
+//   router.push('/edit')
+// }
 
 // Состояние квиза
 const quizState = ref<QuizState>({

@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import QuizApp from '../components/QuizApp.vue'
 import QuizTestPage from '../components/QuizTestPage.vue'
-import EditQuestions from '../components/EditQuestions.vue'
 import Edit from '../components/Edit.vue'
 
 const routes = [

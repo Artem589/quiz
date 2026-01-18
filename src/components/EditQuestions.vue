@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
 import type { Question } from '../types.ts'
-
-
-const router = useRouter()
 
 // Состояния
 const questions = ref<Question[]>([])
@@ -15,7 +11,7 @@ const imageErrors = ref<Record<number, boolean>>({})
 const draggingQuestionId = ref<number | null>(null)
 const showImportDialog = ref(false)
 const importData = ref('')
-const importFileInput = ref<HTMLInputElement>()
+// const importFileInput = ref<HTMLInputElement>()
 
 // Пресеты времени
 const timePresets = [30, 60, 90, 120, 180]
@@ -42,7 +38,7 @@ const loadQuestions = () => {
     try {
       questions.value = JSON.parse(saved)
       // Разворачиваем первый вопрос для удобства
-      if (questions.value.length > 0) {
+      if (questions.value.length > 0 && questions.value[0]?.id !== undefined) {
         expandedQuestions.value = [questions.value[0].id]
       }
     } catch (e) {
@@ -175,7 +171,7 @@ const handleImageError = (question: Question) => {
 
 // Загрузка файла
 const openImageUpload = (index: number) => {
-  const questionId = questions.value[index].id
+  const questionId = questions.value[index]?.id
   const input = document.querySelector(`input[ref="fileInput-${questionId}"]`) as HTMLInputElement
   input?.click()
 }
