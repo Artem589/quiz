@@ -302,7 +302,7 @@ const questions = ref<Question[]>([
     id: 36,
     image: '/assets/36.jpg',
     description: '',
-    answer: '-1',
+    answer: '1',
     timeLimit: 600
   },
   {

@@ -4,7 +4,7 @@ import QuizApp from './components/QuizApp.vue'
 </script>
 
 <template>
-  <router-view />
+  <quiz-app />
 </template>
 
 <style>
