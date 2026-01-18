@@ -2,394 +2,362 @@
 import {ref, computed, onMounted, onUnmounted} from 'vue'
 import type {Question, QuizState} from '../types.ts'
 
-// // Вместо статического массива questions
-// const questions = ref<Question[]>([])
-//
-// // Добавьте функцию загрузки вопросов
-// const loadQuestions = () => {
-//   const saved = localStorage.getItem('quiz-questions')
-//   if (saved) {
-//     questions.value = JSON.parse(saved)
-//   } else {
-//     // Запасные вопросы если в localStorage пусто
-//     questions.value = [
-//       {
-//         id: 1,
-//         image: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Teorema_chevy.svg',
-//         description: 'Сколько планет в Солнечной системе?',
-//         answer: '8',
-//         timeLimit: 120
-//       },
-//       {
-//         id: 2,
-//         image: 'https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=800&h=400&fit=crop',
-//         description: 'Какая самая длинная река в мире?',
-//         answer: 'Нил',
-//         timeLimit: 120
-//       },
-//       {
-//         id: 3,
-//         image: 'https://images.unsplash.com/photo-1519996529934-eee4e47ae1c5?w=800&h=400&fit=crop',
-//         description: 'Столица Японии?',
-//         answer: 'Токио',
-//         timeLimit: 120
-//       },
-//       {
-//         id: 4,
-//         image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?w=800&h=400&fit=crop',
-//         description: 'Сколько элементов в периодической таблице?',
-//         answer: '118',
-//         timeLimit: 120
-//       },
-//       {
-//         id: 5,
-//         image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop',
-//         description: 'Самое высокое здание в мире?',
-//         answer: 'Бурдж-Халифа',
-//         timeLimit: 120
-//       }
-//     ]
-//   }
-// }
+// Используем динамическую загрузку вопросов вместо статического массива
+const questions = ref<Question[]>([])
 
-const questions = ref<Question[]>([
-  {
-    id: 1,
-    image: '/assets/1.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 2,
-    image: '/assets/2.jpg',
-    description: '',
-    answer: '4',
-    timeLimit: 120
-  },
-  {
-    id: 3,
-    image: '/assets/3.jpg',
-    description: '',
-    answer: '1,5',
-    timeLimit: 120
-  },
-  {
-    id: 4,
-    image: '/assets/4.jpg',
-    description: '',
-    answer: '3',
-    timeLimit: 120
-  },
-  {
-    id: 5,
-    image: '/assets/5.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 6,
-    image: '/assets/6.jpg',
-    description: '',
-    answer: '3',
-    timeLimit: 120
-  },
-  {
-    id: 7,
-    image: '/assets/7.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 8,
-    image: '/assets/8.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 9,
-    image: '/assets/9.jpg',
-    description: '',
-    answer: '3',
-    timeLimit: 120
-  },
-  {
-    id: 10,
-    image: '/assets/10.jpg',
-    description: '',
-    answer: '3',
-    timeLimit: 120
-  },
-  {
-    id: 11,
-    image: '/assets/11.jpg',
-    description: '',
-    answer: '2',
-    timeLimit: 120
-  },
-  {
-    id: 12,
-    image: '/assets/12.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 13,
-    image: '/assets/13.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 14,
-    image: '/assets/14.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 15,
-    image: '/assets/15.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 16,
-    image: '/assets/16.jpg',
-    description: '',
-    answer: '-',
-    timeLimit: 120
-  },
-  {
-    id: 17,
-    image: '/assets/17.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 18,
-    image: '/assets/18.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 19,
-    image: '/assets/19.jpg',
-    description: '',
-    answer: '-',
-    timeLimit: 120
-  },
-  {
-    id: 20,
-    image: '/assets/20.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 21,
-    image: '/assets/21.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 22,
-    image: '/assets/22.jpg',
-    description: '',
-    answer: '-1',
-    timeLimit: 120
-  },
-  {
-    id: 23,
-    image: '/assets/23.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 24,
-    image: '/assets/24.jpg',
-    description: '',
-    answer: '-',
-    timeLimit: 120
-  },
-  {
-    id: 25,
-    image: '/assets/25.jpg',
-    description: '',
-    answer: '-1',
-    timeLimit: 120
-  },
-  {
-    id: 26,
-    image: '/assets/26.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 27,
-    image: '/assets/27.jpg',
-    description: '',
-    answer: '-',
-    timeLimit: 120
-  },
-  {
-    id: 28,
-    image: '/assets/28.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 29,
-    image: '/assets/29.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 30,
-    image: '/assets/30.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 120
-  },
-  {
-    id: 31,
-    image: '/assets/31.jpg',
-    description: '',
-    answer: '0',
-    timeLimit: 120
-  },
-  {
-    id: 32,
-    image: '/assets/32.jpg',
-    description: '',
-    answer: '-',
-    timeLimit: 120
-  },
-  {
-    id: 33,
-    image: '/assets/33.jpg',
-    description: '',
-    answer: '1,5',
-    timeLimit: 600
-  },
-  {
-    id: 34,
-    image: '/assets/34.jpg',
-    description: '',
-    answer: '-1',
-    timeLimit: 600
-  },
-  {
-    id: 35,
-    image: '/assets/35.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 600
-  },
-  {
-    id: 36,
-    image: '/assets/36.jpg',
-    description: '',
-    answer: '-1',
-    timeLimit: 600
-  },
-  {
-    id: 37,
-    image: '/assets/37.jpg',
-    description: '',
-    answer: '1',
-    timeLimit: 600
-  },
-  {
-    id: 38,
-    image: '/assets/38.jpg',
-    description: '',
-    answer: '-1,5',
-    timeLimit: 600
-  },
-  {
-    id: 39,
-    image: '/assets/39.jpg',
-    description: '',
-    answer: '-1',
-    timeLimit: 600
-  },
-  {
-    id: 40,
-    image: '/assets/40.jpg',
-    description: '',
-    answer: '-1,5',
-    timeLimit: 600
-  },
-  {
-    id: 41,
-    image: '/assets/41.jpg',
-    description: '',
-    answer: '-1',
-    timeLimit: 600
-  },
-  {
-    id: 42,
-    image: '/assets/42.jpg',
-    description: '',
-    answer: '-1',
-    timeLimit: 600
-  },
-  {
-    id: 43,
-    image: '/assets/43.jpg',
-    description: '',
-    answer: '-1,5',
-    timeLimit: 600
-  },
-  {
-    id: 44,
-    image: '/assets/44.jpg',
-    description: '',
-    answer: '-1',
-    timeLimit: 600
-  },
-  // {
-  //   id: 45,
-  //   image: '/assets/45.jpg',
-  //   description: '',
-  //   answer: '0,25',
-  //   timeLimit: 120
-  // },
-  // // {
-  // //   id: 46,
-  // //   image: '/assets/46.jpg',
-  // //   description: '',
-  // //   answer: '7',
-  // //   timeLimit: 120
-  // // },
-  // {
-  //   id: 47,
-  //   image: '/assets/47.jpg',
-  //   description: '',
-  //   answer: '11',
-  //   timeLimit: 120
-  // },
-  // {
-  //   id: 48,
-  //   image: '/assets/48.jpg',
-  //   description: '',
-  //   answer: '11',
-  //   timeLimit: 120
-  // },
-])
+// Функция загрузки вопросов
+const loadQuestions = () => {
+  const saved = localStorage.getItem('quiz-questions')
+
+  if (saved) {
+    try {
+      questions.value = JSON.parse(saved)
+      console.log(`Загружено ${questions.value.length} вопросов из localStorage`)
+    } catch (e) {
+      console.error('Ошибка загрузки вопросов:', e)
+      // Если ошибка, загружаем вопросы по умолчанию
+      loadDefaultQuestions()
+    }
+  } else {
+    console.log('Нет сохраненных вопросов, загружаем по умолчанию')
+    loadDefaultQuestions()
+  }
+}
+
+// Функция загрузки ваших вопросов по умолчанию
+const loadDefaultQuestions = () => {
+  questions.value = [
+    {
+      id: 1,
+      image: '/assets/1.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 120
+    },
+    {
+      id: 2,
+      image: '/assets/2.jpg',
+      description: '',
+      answer: '4',
+      timeLimit: 120
+    },
+    {
+      id: 3,
+      image: '/assets/3.jpg',
+      description: '',
+      answer: '1,5',
+      timeLimit: 120
+    },
+    {
+      id: 4,
+      image: '/assets/4.jpg',
+      description: '',
+      answer: '3',
+      timeLimit: 120
+    },
+    {
+      id: 5,
+      image: '/assets/5.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 120
+    },
+    {
+      id: 6,
+      image: '/assets/6.jpg',
+      description: '',
+      answer: '3',
+      timeLimit: 120
+    },
+    {
+      id: 7,
+      image: '/assets/7.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 120
+    },
+    {
+      id: 8,
+      image: '/assets/8.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 120
+    },
+    {
+      id: 9,
+      image: '/assets/9.jpg',
+      description: '',
+      answer: '3',
+      timeLimit: 120
+    },
+    {
+      id: 10,
+      image: '/assets/10.jpg',
+      description: '',
+      answer: '3',
+      timeLimit: 120
+    },
+    {
+      id: 11,
+      image: '/assets/11.jpg',
+      description: '',
+      answer: '2',
+      timeLimit: 120
+    },
+    {
+      id: 12,
+      image: '/assets/12.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 120
+    },
+    {
+      id: 13,
+      image: '/assets/13.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 14,
+      image: '/assets/14.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 120
+    },
+    {
+      id: 15,
+      image: '/assets/15.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 16,
+      image: '/assets/16.jpg',
+      description: '',
+      answer: '-',
+      timeLimit: 120
+    },
+    {
+      id: 17,
+      image: '/assets/17.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 120
+    },
+    {
+      id: 18,
+      image: '/assets/18.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 19,
+      image: '/assets/19.jpg',
+      description: '',
+      answer: '-',
+      timeLimit: 120
+    },
+    {
+      id: 20,
+      image: '/assets/20.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 21,
+      image: '/assets/21.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 22,
+      image: '/assets/22.jpg',
+      description: '',
+      answer: '-1',
+      timeLimit: 120
+    },
+    {
+      id: 23,
+      image: '/assets/23.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 24,
+      image: '/assets/24.jpg',
+      description: '',
+      answer: '-',
+      timeLimit: 120
+    },
+    {
+      id: 25,
+      image: '/assets/25.jpg',
+      description: '',
+      answer: '-1',
+      timeLimit: 120
+    },
+    {
+      id: 26,
+      image: '/assets/26.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 27,
+      image: '/assets/27.jpg',
+      description: '',
+      answer: '-',
+      timeLimit: 120
+    },
+    {
+      id: 28,
+      image: '/assets/28.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 29,
+      image: '/assets/29.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 30,
+      image: '/assets/30.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 120
+    },
+    {
+      id: 31,
+      image: '/assets/31.jpg',
+      description: '',
+      answer: '0',
+      timeLimit: 120
+    },
+    {
+      id: 32,
+      image: '/assets/32.jpg',
+      description: '',
+      answer: '-',
+      timeLimit: 120
+    },
+    {
+      id: 33,
+      image: '/assets/33.jpg',
+      description: '',
+      answer: '1,5',
+      timeLimit: 600
+    },
+    {
+      id: 34,
+      image: '/assets/34.jpg',
+      description: '',
+      answer: '-1',
+      timeLimit: 600
+    },
+    {
+      id: 35,
+      image: '/assets/35.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 600
+    },
+    {
+      id: 36,
+      image: '/assets/36.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 600
+    },
+    {
+      id: 37,
+      image: '/assets/37.jpg',
+      description: '',
+      answer: '1',
+      timeLimit: 600
+    },
+    {
+      id: 38,
+      image: '/assets/38.jpg',
+      description: '',
+      answer: '-1,5',
+      timeLimit: 600
+    },
+    {
+      id: 39,
+      image: '/assets/39.jpg',
+      description: '',
+      answer: '-1',
+      timeLimit: 600
+    },
+    {
+      id: 40,
+      image: '/assets/40.jpg',
+      description: '',
+      answer: '-1,5',
+      timeLimit: 600
+    },
+    {
+      id: 41,
+      image: '/assets/41.jpg',
+      description: '',
+      answer: '-1',
+      timeLimit: 600
+    },
+    {
+      id: 42,
+      image: '/assets/42.jpg',
+      description: '',
+      answer: '-1',
+      timeLimit: 600
+    },
+    {
+      id: 43,
+      image: '/assets/43.jpg',
+      description: '',
+      answer: '-1,5',
+      timeLimit: 600
+    },
+    {
+      id: 44,
+      image: '/assets/44.jpg',
+      description: '',
+      answer: '-1',
+      timeLimit: 600
+    },
+  ]
+
+  // Автоматически сохраняем вопросы по умолчанию в localStorage
+  saveQuestionsToStorage()
+}
+
+// Функция сохранения вопросов в localStorage
+const saveQuestionsToStorage = () => {
+  try {
+    localStorage.setItem('quiz-questions', JSON.stringify(questions.value))
+    console.log(`Сохранено ${questions.value.length} вопросов в localStorage`)
+  } catch (e) {
+    console.error('Ошибка сохранения вопросов:', e)
+  }
+}
+
+// Кнопка перехода к редактору
+import { useRouter } from 'vue-router'
+const router = useRouter()
+
+const goToEditor = () => {
+  router.push('/edit')
+}
 
 // Состояние квиза
 const quizState = ref<QuizState>({
@@ -492,7 +460,10 @@ const restartQuiz = () => {
 
 // Хуки жизненного цикла
 onMounted(() => {
-  startTimer()
+  loadQuestions()  // Загружаем вопросы при старте
+  if (questions.value.length > 0) {
+    startTimer()
+  }
 })
 
 onUnmounted(() => {
@@ -500,11 +471,6 @@ onUnmounted(() => {
     clearInterval(quizState.value.timer)
   }
 })
-
-// onMounted(() => {
-//   loadQuestions()
-//   startTimer()
-// })
 </script>
 
 <template>
@@ -526,11 +492,6 @@ onUnmounted(() => {
             <div class="question-image">
               <img :src="currentQuestionData.image" :alt="currentQuestionData.description"/>
             </div>
-
-            <!--            &lt;!&ndash; Описание задания &ndash;&gt;-->
-            <!--            <div class="question-description">-->
-            <!--              <p>{{ currentQuestionData.description }}</p>-->
-            <!--            </div>-->
 
             <!-- Поле ввода ответа -->
             <div class="answer-input-container">
