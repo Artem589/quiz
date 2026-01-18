@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
-import type { Question } from '../types.ts'
+import {ref, computed, onMounted} from 'vue'
+import type {Question} from '../types.ts'
 
 // Состояния
 const questions = ref<Question[]>([])
@@ -104,8 +104,9 @@ const addNewQuestion = () => {
 
 // Удаление вопроса
 const removeQuestion = (index: number) => {
+  const questionId = questions.value[index]?.id!
+
   if (confirm('Удалить этот вопрос?')) {
-    const questionId = questions.value[index].id
     questions.value.splice(index, 1)
     // Удаляем из списка развернутых
     const expandedIndex = expandedQuestions.value.indexOf(questionId)
@@ -123,7 +124,7 @@ const duplicateQuestion = (index: number) => {
   const duplicate: Question = {
     ...JSON.parse(JSON.stringify(original)),
     id: newId,
-    description: original.description + ' (копия)'
+    description: original?.description + ' (копия)'
   }
 
   questions.value.splice(index + 1, 0, duplicate)
@@ -204,9 +205,11 @@ const updateTimeValue = (question: Question) => {
 // Сохранение изменений отдельного вопроса
 const saveQuestionChanges = (index: number) => {
   const question = questions.value[index]
-  savedQuestions.value.push(question.id)
+  if (question === undefined) return
+
+  savedQuestions.value.push(question!.id)
   setTimeout(() => {
-    const idx = savedQuestions.value.indexOf(question.id)
+    const idx = savedQuestions.value.indexOf(question!.id)
     if (idx > -1) {
       savedQuestions.value.splice(idx, 1)
     }
@@ -229,9 +232,8 @@ const handleDragStart = (event: DragEvent, questionId: number) => {
   event.dataTransfer?.setData('text/plain', questionId.toString())
 }
 
-const handleDragOver = (event: DragEvent, index: number) => {
+const handleDragOver = (event: DragEvent) => {
   event.preventDefault()
-  // Можно добавить визуальную обратную связь
 }
 
 const handleDrop = (event: DragEvent, targetIndex: number) => {
@@ -241,7 +243,9 @@ const handleDrop = (event: DragEvent, targetIndex: number) => {
 
   if (sourceIndex !== -1 && sourceIndex !== targetIndex) {
     const [movedQuestion] = questions.value.splice(sourceIndex, 1)
-    questions.value.splice(targetIndex, 0, movedQuestion)
+    if (movedQuestion) {
+      questions.value.splice(targetIndex, 0, movedQuestion)
+    }
   }
 
   draggingQuestionId.value = null
@@ -250,7 +254,7 @@ const handleDrop = (event: DragEvent, targetIndex: number) => {
 // Экспорт вопросов
 const exportQuestions = () => {
   const dataStr = JSON.stringify(questions.value, null, 2)
-  const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr)
+  const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr)
 
   const exportFileDefaultName = 'quiz-questions.json'
 
@@ -328,7 +332,7 @@ const handleImportFile = (event: Event) => {
               :class="{ 'is-dragging': question.id === draggingQuestionId }"
               draggable="true"
               @dragstart="handleDragStart($event, question.id)"
-              @dragover.prevent="handleDragOver($event, index)"
+              @dragover.prevent="handleDragOver($event)"
               @drop="handleDrop($event, index)"
           >
             <!-- Заголовок вопроса -->
