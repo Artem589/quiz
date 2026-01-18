@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <quiz-app />
+  <router-view />
 </template>
 
 <style>
