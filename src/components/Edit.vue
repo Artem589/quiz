@@ -1228,6 +1228,7 @@ icon {
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #000;
 }
 
 .time-preset-btn:hover {
@@ -1783,6 +1784,7 @@ icon {
 
 .method-icon {
   font-size: 2.5rem;
+  color: #000;
 }
 
 .method-text {
