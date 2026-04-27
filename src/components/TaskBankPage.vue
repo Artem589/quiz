@@ -323,9 +323,30 @@ onMounted(load)
 .btn-delete { background: rgba(255,82,82,0.1); color: #ff5252; border-color: rgba(255,82,82,0.2); text-align: center; }
 .btn-delete:hover { background: #ff5252; color: white; }
 
+@media (max-width: 768px) {
+  .page-content { padding: 20px 16px; }
+}
+
 @media (max-width: 600px) {
-  .page-content { padding: 16px; }
-  .task-card { flex-direction: column; }
+  .page-header { padding: 11px 56px 11px 16px; gap: 10px; }
+  .page-header h1 { font-size: 1.5rem; }
+  .header-sub { display: none; }
+  .back-btn { padding: 9px 14px; font-size: 0.85rem; }
+  .page-content { padding: 14px 12px; gap: 16px; }
+  .card { padding: 16px 14px; }
+  .form-input, .form-textarea { font-size: 16px; }
+  .form-row { flex-direction: column; gap: 10px; }
+  .time-field { flex-direction: row; align-items: center; gap: 10px; }
+  .time-label { white-space: nowrap; }
+  .btn-primary { padding: 12px; font-size: 0.9rem; }
+  .task-card { flex-direction: column; gap: 12px; }
   .task-actions { flex-direction: row; width: 100%; }
+  .btn-add { flex: 1; text-align: center; }
+  .task-desc { font-size: 0.9rem; }
+}
+
+@media (max-width: 380px) {
+  .page-header h1 { font-size: 1.3rem; }
+  .task-meta { flex-direction: column; gap: 6px; }
 }
 </style>

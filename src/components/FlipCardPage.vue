@@ -307,37 +307,46 @@ watch(() => currentIndex.value, () => {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
+/* Планшет */
 @media (max-width: 768px) {
-  .card-wrapper {
-    height: 280px;
-  }
-
-  .card-text {
-    font-size: 1.4rem;
-  }
-
-  .flip-header h1 {
-    font-size: 2rem;
-  }
+  .flip-header h1 { font-size: 2rem; }
+  .card-wrapper { height: 300px; }
+  .card-text { font-size: 1.5rem; }
 }
 
-@media (max-width: 480px) {
-  .card-wrapper {
-    height: 220px;
-  }
+/* Телефон (iPhone 11) */
+@media (max-width: 600px) {
+  .flip-header { padding: 11px 56px 11px 16px; }
+  .flip-header h1 { font-size: 1.5rem; }
+  .edit-btn { right: 56px; padding: 8px 12px; font-size: 0.82rem; }
+  .flip-content { padding: 12px; }
+  .main-content { margin-top: 16px; }
+  .card-wrapper { height: 240px; }
+  .card-face { padding: 24px; }
+  .card-text { font-size: 1.2rem; }
+  .nav-buttons { padding-top: 14px; gap: 10px; }
+  .nav-btn { padding: 12px 20px; font-size: 0.95rem; }
+  .flip-info { padding: 11px 16px; }
+}
 
-  .card-text {
-    font-size: 1.15rem;
-  }
+/* Маленький телефон */
+@media (max-width: 380px) {
+  .flip-header h1 { font-size: 1.3rem; }
+  .card-wrapper { height: 200px; }
+  .card-text { font-size: 1rem; }
+  .nav-buttons { flex-direction: column; align-items: stretch; }
+  .nav-btn { text-align: center; }
+}
 
-  .nav-buttons {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .flip-header h1 {
-    font-size: 1.6rem;
-  }
+/* Горизонтальная ориентация */
+@media (max-height: 500px) and (max-width: 900px) {
+  .flip-header { padding: 8px 60px 8px 16px; }
+  .flip-header h1 { font-size: 1.2rem; }
+  .main-content { margin-top: 10px; }
+  .card-wrapper { height: 180px; }
+  .card-text { font-size: 1rem; }
+  .card-face { padding: 16px; }
+  .nav-buttons { padding-top: 10px; }
+  .flip-info { padding: 8px 16px; }
 }
 </style>

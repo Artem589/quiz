@@ -209,4 +209,20 @@ const sections = [
   flex-shrink: 0;
   transition: transform 0.2s ease, color 0.2s ease;
 }
+
+@media (max-width: 600px) {
+  .bank-header { padding: 11px 56px 11px 16px; gap: 12px; }
+  .bank-header h1 { font-size: 1.6rem; }
+  .bank-content { padding: 20px 14px; align-items: flex-start; }
+  .back-btn { padding: 9px 14px; font-size: 0.85rem; }
+  .section-card { padding: 18px 16px; gap: 14px; }
+  .section-icon { font-size: 1.6rem; width: 44px; height: 44px; }
+  .section-title { font-size: 1rem; }
+  .section-desc { font-size: 0.78rem; }
+}
+
+@media (max-width: 380px) {
+  .bank-header h1 { font-size: 1.4rem; }
+  .section-card { padding: 14px 12px; }
+}
 </style>
