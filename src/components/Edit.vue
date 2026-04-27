@@ -846,7 +846,7 @@ icon {
 .edit-quiz-app {
   width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(135deg, #a8edea 0%, #eee 100%);
+  background: var(--bg-gradient);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #2c3e50;
   overflow-x: hidden;
@@ -952,8 +952,8 @@ icon {
 .number {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #00BCD4;
-  background: rgba(0, 188, 212, 0.1);
+  color: var(--primary);
+  background: var(--primary-bg-light);
   padding: 5px 12px;
   border-radius: 8px;
 }
@@ -992,8 +992,8 @@ icon {
 }
 
 .expand-btn.expanded {
-  background: rgba(0, 188, 212, 0.2);
-  border-color: #00BCD4;
+  background: var(--primary-bg-mid);
+  border-color: var(--primary);
 }
 
 .action-btn.duplicate:hover {
@@ -1123,9 +1123,9 @@ icon {
 }
 
 .form-input:focus {
-  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
+  box-shadow: 0 0 0 3px var(--primary-glow);
   transform: translateY(-1px);
-  border-color: #00BCD4;
+  border-color: var(--primary);
 }
 
 .form-input.image-url {
@@ -1151,9 +1151,9 @@ icon {
 }
 
 .form-textarea:focus {
-  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
+  box-shadow: 0 0 0 3px var(--primary-glow);
   transform: translateY(-1px);
-  border-color: #00BCD4;
+  border-color: var(--primary);
 }
 
 /* Ввод времени */
@@ -1179,15 +1179,15 @@ icon {
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #00BCD4;
+  background: var(--primary);
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0, 188, 212, 0.5);
+  box-shadow: 0 2px 10px var(--primary-glow-strong);
   transition: all 0.3s ease;
 }
 
 .time-slider::-webkit-slider-thumb:hover {
-  background: #0097A7;
+  background: var(--primary-dark);
   transform: scale(1.1);
 }
 
@@ -1205,7 +1205,7 @@ icon {
 .time-value {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #00BCD4;
+  color: var(--primary);
   font-family: 'Monaco', 'Consolas', monospace;
 }
 
@@ -1237,9 +1237,9 @@ icon {
 }
 
 .time-preset-btn.active {
-  background: rgba(0, 188, 212, 0.2);
-  border-color: #00BCD4;
-  color: #0097A7;
+  background: var(--primary-bg-mid);
+  border-color: var(--primary);
+  color: var(--primary-dark);
   font-weight: 600;
 }
 
@@ -1396,7 +1396,7 @@ icon {
 }
 
 .modal-content {
-  background: linear-gradient(135deg, #a8edea 0%, #eee 100%);
+  background: var(--bg-gradient);
   border-radius: 20px;
   padding: 30px;
   width: 90%;
@@ -1473,8 +1473,8 @@ icon {
 
 /* Drag-over эффект */
 .question-edit-card.drag-over {
-  border: 2px dashed #00BCD4;
-  background: rgba(0, 188, 212, 0.1);
+  border: 2px dashed var(--primary);
+  background: var(--primary-bg-light);
 }
 
 /* Анимации */
@@ -1560,14 +1560,14 @@ icon {
 }
 
 .drop-zone {
-  background: linear-gradient(135deg, #a8edea 0%, #eee 100%);
+  background: var(--bg-gradient);
   border-radius: 20px;
   padding: 40px;
   width: 90%;
   max-width: 500px;
   text-align: center;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  border: 3px dashed #00BCD4;
+  border: 3px dashed var(--primary);
 }
 
 .drop-content {
@@ -1579,7 +1579,7 @@ icon {
 
 .drop-icon {
   font-size: 4rem;
-  color: #00BCD4;
+  color: var(--primary);
 }
 
 .drop-content h3 {
@@ -1594,7 +1594,7 @@ icon {
 }
 
 .browse-btn {
-  background: #00BCD4;
+  background: var(--primary);
   color: white;
   border: none;
   border-radius: 8px;
@@ -1606,7 +1606,7 @@ icon {
 }
 
 .browse-btn:hover {
-  background: #0097A7;
+  background: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
 }
@@ -1652,7 +1652,7 @@ icon {
 }
 
 .image-preview-container:hover {
-  border-color: #00BCD4;
+  border-color: var(--primary);
   background: rgba(255, 255, 255, 0.7);
 }
 
@@ -1864,7 +1864,7 @@ icon {
 }
 
 .unsplash-search-btn {
-  background: #00BCD4;
+  background: var(--primary);
   color: white;
   border: none;
   border-radius: 8px;
@@ -1922,8 +1922,8 @@ icon {
 .spinner {
   width: 40px;
   height: 40px;
-  border: 4px solid rgba(0, 188, 212, 0.2);
-  border-top-color: #00BCD4;
+  border: 4px solid var(--primary-bg-mid);
+  border-top-color: var(--primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto 20px;
