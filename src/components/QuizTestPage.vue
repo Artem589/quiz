@@ -583,7 +583,7 @@ onUnmounted(() => {
 .quiz-app {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #a8edea 0%, #eee 100%);
+  background: var(--bg-gradient);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #2c3e50;
   overflow: hidden;
@@ -680,7 +680,7 @@ onUnmounted(() => {
   margin-bottom: 10px;
   font-family: 'Monaco', 'Consolas', monospace;
   transition: all 0.3s ease;
-  color: #00BCD4;
+  color: var(--primary);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: absolute;
   right: 50px;
@@ -707,7 +707,7 @@ onUnmounted(() => {
 
 .timer-progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, #009688, #4DB6AC);
+  background: var(--timer-bar);
   transition: width 1s linear;
 }
 
@@ -763,9 +763,9 @@ onUnmounted(() => {
 }
 
 .answer-input:focus {
-  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
+  box-shadow: 0 0 0 3px var(--primary-glow);
   transform: translateY(-1px);
-  border-color: #00BCD4;
+  border-color: var(--primary);
 }
 
 .answer-input.correct {
@@ -784,7 +784,7 @@ onUnmounted(() => {
 
 .submit-btn {
   padding: 15px 25px;
-  background: #00BCD4;
+  background: var(--primary);
   color: white;
   border: none;
   border-radius: 8px;
@@ -792,15 +792,15 @@ onUnmounted(() => {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+  box-shadow: 0 4px 15px var(--primary-glow);
   white-space: nowrap;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #0097A7;
+  background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+  box-shadow: 0 6px 20px var(--primary-glow-strong);
 }
 
 .submit-btn:disabled {
@@ -887,8 +887,8 @@ onUnmounted(() => {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #00BCD4;
-  text-shadow: 0 2px 4px rgba(0, 188, 212, 0.3);
+  color: var(--primary);
+  text-shadow: 0 2px 4px var(--primary-glow);
 }
 
 .restart-btn {
