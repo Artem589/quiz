@@ -330,14 +330,26 @@ onMounted(loadCards)
   transform: translateY(-1px);
 }
 
-@media (max-width: 480px) {
-  .edit-header h1 {
-    font-size: 1.4rem;
-  }
+@media (max-width: 768px) {
+  .edit-header h1 { font-size: 1.7rem; }
+  .edit-content { padding: 20px 16px; }
+}
 
-  .add-form,
-  .cards-list {
-    padding: 20px;
-  }
+@media (max-width: 600px) {
+  .edit-header { padding: 11px 56px 11px 16px; }
+  .edit-header h1 { font-size: 1.4rem; }
+  .back-btn { padding: 9px 14px; font-size: 0.85rem; }
+  .edit-content { padding: 16px 12px; gap: 16px; }
+  .add-form, .cards-list { padding: 18px 16px; }
+  .form-input { font-size: 16px; }
+  .add-btn { padding: 12px; font-size: 16px; }
+  .card-item { padding: 12px; gap: 10px; }
+  .card-front-text, .card-back-text { font-size: 0.88rem; }
+}
+
+@media (max-width: 380px) {
+  .edit-header h1 { font-size: 1.2rem; }
+  .card-texts { flex-direction: column; gap: 4px; }
+  .card-separator { display: none; }
 }
 </style>

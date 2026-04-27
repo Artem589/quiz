@@ -404,9 +404,27 @@ onMounted(() => {
 }
 .btn-delete:hover { background: #ff5252; color: white; }
 
+@media (max-width: 768px) {
+  .page-content { padding: 20px 16px; }
+}
+
 @media (max-width: 600px) {
-  .page-content { padding: 16px; }
-  .set-card { flex-direction: column; align-items: flex-start; }
-  .set-actions { width: 100%; }
+  .page-header { padding: 11px 56px 11px 16px; gap: 10px; }
+  .page-header h1 { font-size: 1.5rem; }
+  .header-sub { display: none; }
+  .back-btn { padding: 9px 14px; font-size: 0.85rem; }
+  .page-content { padding: 14px 12px; gap: 14px; }
+  .card { padding: 18px 16px; }
+  .form-input { font-size: 16px; }
+  .btn-primary { padding: 12px 16px; font-size: 0.9rem; }
+  .set-card { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .set-actions { width: 100%; flex-wrap: wrap; }
+  .btn-activate, .btn-deactivate, .btn-edit { flex: 1; text-align: center; }
+  .set-name { font-size: 0.95rem; }
+}
+
+@media (max-width: 380px) {
+  .page-header h1 { font-size: 1.3rem; }
+  .form-row { flex-direction: column; }
 }
 </style>

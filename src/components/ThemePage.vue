@@ -313,32 +313,31 @@ const router = useRouter()
   letter-spacing: 0.04em;
 }
 
+@media (max-width: 768px) {
+  .theme-header h1 { font-size: 1.7rem; }
+  .themes-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
+}
+
 @media (max-width: 640px) {
-  .theme-section {
-    padding: 24px 16px;
-  }
+  .theme-header { padding: 14px 56px 14px 16px; gap: 12px; }
+  .theme-header h1 { font-size: 1.4rem; }
+  .header-sub { font-size: 0.75rem; }
+  .back-btn { padding: 8px 14px; font-size: 0.85rem; }
+  .theme-section { padding: 20px 14px; }
+  .section-label { margin-bottom: 14px; padding-bottom: 10px; }
+  .section-title { font-size: 1rem; }
+  .themes-grid { grid-template-columns: 1fr 1fr; gap: 11px; }
+  .theme-card { min-height: 118px; padding: 15px; gap: 14px; border-radius: 16px; }
+  .swatch { width: 28px; height: 28px; }
+  .check { width: 22px; height: 22px; font-size: 0.8rem; }
+  .theme-name { font-size: 0.85rem; }
+  .pantone-code { font-size: 0.66rem; }
+  .pantone-year { font-size: 0.62rem; padding: 2px 6px; }
+}
 
-  .themes-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-
-  .theme-header h1 {
-    font-size: 1.5rem;
-  }
-
-  .theme-card {
-    min-height: 120px;
-    padding: 16px;
-    gap: 16px;
-  }
-
-  .theme-name {
-    font-size: 0.88rem;
-  }
-
-  .pantone-code {
-    font-size: 0.65rem;
-  }
+@media (max-width: 380px) {
+  .themes-grid { gap: 8px; }
+  .theme-card { min-height: 100px; padding: 12px; }
+  .theme-name { font-size: 0.78rem; }
 }
 </style>

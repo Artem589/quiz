@@ -1484,62 +1484,87 @@ icon {
   }
 }
 
-/* Адаптивность */
+/* ── Адаптивность ── */
 @media (max-width: 768px) {
-  .edit-quiz-header {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-    padding: 15px;
-  }
-
-  .edit-quiz-header h1 {
-    font-size: 2rem;
-  }
-
-  .question-preview {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .preview-image {
-    width: 100%;
-    height: 100px;
-  }
-
-  .stats {
-    grid-template-columns: 1fr;
-  }
-
-  .action-buttons {
-    grid-template-columns: 1fr;
-  }
-
-  .modal-content {
-    margin: 20px;
-    padding: 20px;
-  }
+  .edit-quiz-container { padding: 14px; }
+  .edit-quiz-header { padding: 16px 20px; margin-bottom: 20px; }
+  .edit-quiz-header h1 { font-size: 1.8rem; }
+  .question-preview { grid-template-columns: 1fr; gap: 12px; }
+  .preview-image { width: 100%; height: 90px; }
+  .stats { grid-template-columns: 1fr; }
+  .action-buttons { grid-template-columns: 1fr; }
+  .modal-content { margin: 16px; padding: 20px; }
+  .time-presets { gap: 8px; }
 }
 
-@media (max-width: 480px) {
-  .edit-quiz-container {
-    padding: 10px;
+@media (max-width: 600px) {
+  .edit-quiz-app { overflow-y: auto; }
+  .edit-quiz-container { padding: 10px; }
+
+  .edit-quiz-header {
+    padding: 12px 56px 12px 14px; /* отступ под FAB справа */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+    border-radius: 16px;
   }
+
+  .edit-quiz-header h1 { font-size: 1.4rem; }
+
+  .header-actions { width: 100%; }
+  .back-btn { width: 100%; justify-content: center; text-align: center; }
+
+  .question-edit-card { padding: 14px; }
 
   .question-header {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
   }
 
-  .question-actions {
-    align-self: flex-end;
-  }
+  .question-number { gap: 8px; }
+  .number { font-size: 1.1rem; padding: 4px 10px; }
+  .id { font-size: 0.78rem; }
 
-  .form-input,
-  .form-textarea {
-    font-size: 16px; /* Убираем увеличение на iOS */
-  }
+  .question-actions { gap: 8px; }
+  .expand-btn, .action-btn { width: 34px; height: 34px; }
+
+  .question-preview { grid-template-columns: 1fr; gap: 10px; }
+  .preview-image { width: 100%; height: 80px; }
+  .preview-meta { font-size: 1.1rem; gap: 14px; }
+
+  .image-preview-container { height: 180px; }
+
+  .form-input, .form-textarea { font-size: 16px; }
+  .form-section { margin-bottom: 18px; }
+
+  .time-presets { gap: 6px; }
+  .time-preset-btn { padding: 5px 9px; font-size: 0.8rem; }
+
+  .form-actions { flex-wrap: wrap; gap: 10px; }
+  .save-question-btn { width: 100%; justify-content: center; }
+
+  .add-question-btn { padding: 13px 20px; font-size: 0.95rem; width: 100%; }
+
+  .global-actions { padding: 18px 14px; }
+  .stat-item { padding: 12px; }
+  .stat-label { font-size: 0.85rem; }
+  .stat-value { font-size: 1rem; }
+
+  .modal-content { margin: 10px; padding: 16px; border-radius: 16px; }
+  .modal-content h3 { font-size: 1.2rem; }
+
+  .drop-zone { padding: 28px 20px; }
+  .drop-content h3 { font-size: 1.4rem; }
+}
+
+@media (max-width: 380px) {
+  .edit-quiz-header h1 { font-size: 1.2rem; }
+  .preview-meta { flex-direction: column; gap: 6px; }
+  .time-presets { gap: 4px; }
 }
 
 /* ==== Стили, которые уже были у вас (оставляем) ==== */

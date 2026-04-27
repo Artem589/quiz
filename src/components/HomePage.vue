@@ -247,25 +247,26 @@ const sections = [
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-@media (max-width: 480px) {
-  .home-container {
-    padding: 28px 16px;
-    gap: 28px;
-  }
+@media (max-width: 768px) {
+  .home-container { padding: 28px 20px; gap: 28px; }
+  .hero-title { font-size: 2rem; }
+}
 
-  .hero-title {
-    font-size: 1.9rem;
-  }
+@media (max-width: 600px) {
+  .home-container { padding: 24px 14px; gap: 22px; }
+  .home-logo { padding: 8px 18px; }
+  .logo-text { font-size: 0.9rem; }
+  .hero-title { font-size: 1.7rem; }
+  .hero-sub { font-size: 0.9rem; }
+  .nav-card { padding: 16px 16px; gap: 14px; }
+  .nav-icon { font-size: 1.4rem; width: 40px; height: 40px; border-radius: 10px; }
+  .nav-title { font-size: 0.97rem; }
+  .nav-desc { font-size: 0.78rem; }
+}
 
-  .nav-card {
-    padding: 16px 18px;
-    gap: 14px;
-  }
-
-  .nav-icon {
-    font-size: 1.5rem;
-    width: 38px;
-    height: 38px;
-  }
+@media (max-width: 380px) {
+  .hero-title { font-size: 1.5rem; }
+  .nav-card { padding: 14px 12px; gap: 12px; }
+  .nav-icon { width: 36px; height: 36px; font-size: 1.2rem; }
 }
 </style>

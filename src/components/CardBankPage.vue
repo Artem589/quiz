@@ -378,11 +378,30 @@ onMounted(() => {
 .btn-add:hover { background: var(--primary); color: white; }
 .btn-add.btn-added { background: rgba(0,150,136,0.15); color: #009688; border-color: rgba(0,150,136,0.3); }
 
+@media (max-width: 768px) {
+  .page-content { padding: 20px 16px; }
+}
+
 @media (max-width: 600px) {
-  .page-content { padding: 16px; }
-  .set-card { flex-direction: column; align-items: flex-start; }
-  .set-actions { width: 100%; }
-  .text-item { flex-direction: column; align-items: flex-start; }
+  .page-header { padding: 11px 56px 11px 16px; gap: 10px; }
+  .page-header h1 { font-size: 1.5rem; }
+  .header-sub { display: none; }
+  .back-btn { padding: 9px 14px; font-size: 0.85rem; }
+  .page-content { padding: 14px 12px; gap: 22px; }
+  .section-title { font-size: 1rem; }
+  .card { padding: 16px 14px; }
+  .form-input { font-size: 16px; }
+  .btn-primary { padding: 11px; font-size: 0.9rem; }
+  .set-card { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .set-actions { width: 100%; flex-wrap: wrap; }
+  .btn-activate, .btn-deactivate, .btn-edit { flex: 1; text-align: center; }
+  .text-item { flex-direction: column; align-items: flex-start; gap: 10px; }
   .text-actions { width: 100%; }
+  .btn-add { flex: 1; text-align: center; }
+}
+
+@media (max-width: 380px) {
+  .page-header h1 { font-size: 1.3rem; }
+  .form-row { flex-direction: column; }
 }
 </style>

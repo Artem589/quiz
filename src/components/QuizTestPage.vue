@@ -941,88 +941,98 @@ onUnmounted(() => {
   }
 }
 
-/* Адаптивность */
+/* ── Адаптивность ── */
+
+/* Планшет */
 @media (max-width: 768px) {
-  .quiz-content {
-    padding: 15px;
-  }
-
-  .question-card {
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .quiz-header h1 {
-    font-size: 2rem;
-  }
-
-  .timer {
-    font-size: 2.5rem;
-  }
-
-  .question-image img {
-    height: 150px;
-  }
-
-  .question-description {
-    padding: 15px;
-  }
-
-  .question-description p {
-    font-size: 1.1rem;
-  }
-
-  .answer-input-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .completion-content {
-    padding: 30px 20px;
-    margin: 10px;
-  }
-
-  .completion-content h2 {
-    font-size: 2rem;
-  }
-
-  .score-percentage {
-    font-size: 2.5rem;
-  }
+  .quiz-header { padding: 14px 16px; }
+  .quiz-header h1 { font-size: 2rem; margin: 0; }
+  .quiz-content { padding: 14px; }
+  .question-card { padding: 20px; gap: 18px; }
+  .timer { right: 16px; font-size: 2.5rem; }
+  .question-image img { max-height: 220px; object-fit: contain; height: auto; }
+  .answer-input-container { flex-direction: column; gap: 10px; }
+  .submit-btn { width: 100%; }
+  .completion-content { padding: 28px 20px; }
+  .completion-content h2 { font-size: 2rem; }
+  .score-percentage { font-size: 2.5rem; }
+  .quiz-info { max-width: 100%; margin: 0 0 6px 0; border-radius: 12px 12px 0 0; }
 }
 
-@media (max-height: 800px) {
-  .quiz-header {
-    padding: 15px;
+/* Телефон (iPhone 11 = 414px и выше) */
+@media (max-width: 600px) {
+  .quiz-header { padding: 11px 56px 11px 16px; } /* отступ справа под FAB */
+  .quiz-header h1 { font-size: 1.5rem; }
+
+  .quiz-content { padding: 12px; overflow-y: auto; }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14px;
+    gap: 14px;
   }
 
-  .quiz-header h1 {
-    font-size: 2rem;
+  /* Таймер уходит из absolute в поток, появляется над карточкой */
+  .timer {
+    position: static;
+    order: -1;
+    font-size: 2.2rem;
+    margin: 0;
   }
 
   .question-card {
-    padding: 20px;
-    gap: 15px;
-  }
-
-  .main-content {
-    align-items: start;
-  }
-
-  .timer {
-    font-size: 2.5rem;
+    padding: 16px;
+    gap: 14px;
+    max-width: 100%;
+    order: 0;
   }
 
   .question-image img {
-    min-height: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    height: auto;
+    width: 100%;
   }
 
-  .question-description {
-    padding: 10px;
-  }
+  /* font-size: 16px предотвращает zoom на iOS при фокусе */
+  .answer-input { padding: 13px 14px; font-size: 16px; }
+  .submit-btn { padding: 13px; width: 100%; font-size: 16px; }
 
-  .question-description p {
-    font-size: 1.1rem;
+  .result-message { padding: 12px 14px; font-size: 0.92rem; }
+
+  .quiz-info {
+    padding: 10px 14px;
+    margin: 0;
+    border-radius: 0;
   }
+  .score, .question-counter { font-size: 0.9rem; }
+
+  .completion-screen { padding: 12px; }
+  .completion-content { padding: 22px 16px; }
+  .completion-content h2 { font-size: 1.6rem; margin-bottom: 12px; }
+  .final-score { font-size: 1rem; }
+  .score-number { font-size: 1.6rem; }
+  .score-percentage { font-size: 2rem; margin-bottom: 18px; }
+  .restart-btn { padding: 13px 28px; font-size: 1rem; width: 100%; }
+}
+
+/* Очень маленькие телефоны */
+@media (max-width: 380px) {
+  .quiz-header h1 { font-size: 1.3rem; }
+  .timer { font-size: 1.8rem; }
+  .question-image img { max-height: 140px; }
+  .question-card { padding: 12px; gap: 12px; }
+}
+
+/* Горизонтальная ориентация телефона */
+@media (max-height: 500px) and (max-width: 900px) {
+  .quiz-header { padding: 8px 60px 8px 16px; }
+  .quiz-header h1 { font-size: 1.2rem; }
+  .quiz-content { padding: 8px; }
+  .main-content { margin-top: 8px; gap: 10px; flex-direction: row; align-items: flex-start; }
+  .timer { position: static; order: 1; font-size: 1.8rem; align-self: flex-start; }
+  .question-card { padding: 12px; gap: 10px; }
+  .question-image img { max-height: 120px; }
 }
 </style>
